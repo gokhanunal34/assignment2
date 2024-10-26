@@ -1,0 +1,96 @@
+
+---I went through the gitlab tutorials on 10/25/2024. I will provide proof with my submission.
+---I started my github account in January 2022. However; I had another account from 2009 which I cannot access
+   in any way. That was right before I dropped out of my computer engineering major back in Istanbul. 
+   https://github.com/gokhanunal34/ is my github account link that I started January 2022 for informal 
+   python coding and projects. I also invited Mr. Andrew Berg to the assignment 2 repo and it is pending.
+
+
+
+Question 5: Subtask #1
+
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Question 5: Subtask #2 
+There are in total 9 commits have been done including me and others. I got it with "git log --oneline | wc -l" AND 
+I also confirmed it with a command of same effect which is "git revlist --all --count". 
+
+
+Question 5: Subtask #3
+
+README.md was last modified on Fri Oct 25 09:49:37 2024 -0400. The command I used to get this output is below.
+$ git log -1 --format==%cd -- README.md
+
+
+Question 5: Subtask #4
+
+Since my first major was Comp Engineering and I had started in 2006(when github was not around), I know exactly
+why. Before github, online collaboration was much harder in my experience. Version control software was 
+okay but not very user friendly.(not remotely as user-friendly as github). So the first reason is that branches in 
+github make online collaboration and version control a breeze. Another reason is that it protects working software
+from possible buggy overwrites from the current developers of the project, they can simply work on their branch until
+they solve their task and they can do it so safely since it is not the main branch and any changes done in a branch
+doesn't autmatically update the main branch of the software.
+
+
+Question 5: Subtask #5
+git logs print out the commits. Git status shows the working directory, and staging area status.
+
+Question 5: Subtask #6
+Below is the command and the output for commits of Vehicle.h
+$ git log --oneline -- Vehicle.h
+03106e9 -> Declared the trivial destructors for all classes -> Fully formatted toString methods for all classes -> Added test cases in the main method for testing the implementations -> Added validation on value for engine sizes in the  Car class
+f9cd890 -> Partial implementation of PoweredVehicle and Car -> Definition of virtual functions
+f9c24b0 Refactored Vehicle class to separate definition and declarations Added mileageEstimate abstract method to Vehicle Implemented the Bicycle class
+4f6c88c Base Vehicle class created
+
+Question 5: Subtask #7
+Here is the command and the output below.
+$ git log --grep="file"
+commit de50ea9ffb5bb887133ffd7a8ac29ebb3729f936 (HEAD -> master, origin/master, origin/HEAD)
+Author: Gokhan Unal <gu23@fsu.edu>
+Date:   Fri Oct 25 19:34:55 2024 -0400
+
+    Empty answers.txt file created in docs folder
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+
+Question 5: Subtask #8
+Inheritence: It simply means a class inheriting the attributes and functions of another already existing class.
+Polymorphism: Virtual functions is an example of polymorphism in C++. The function will behave differently
+based on the object it acts upon during runtime.
+Encapsulation: Let's say we have a class at hand. This class can have private attributes/methods along with
+public attributes/methods. When the instance of the class is created(the object), the private attributes/methods
+will be protected from outside manipulation, which is effectively encapsulating those attributes and methods in 
+an instance of a class.
+
+Question 5: Subtask #9
+The main difference between "Dictator and Lieutenants" workflow and "Integration manager workflow" is that the former 
+involves a central/blesses repository that only the dictator can push to it. In integration manager workflow there are
+no such hiearchies to begin with. It only has a "integration manager" that integrates updates to the system by
+developers, that's all.
+
+Question 5: Subtask #10
+Since 100 developers are a lot of developers; the dictator model will ensure there are minimal conflicts 
+and proper checks and balances system so that the code gets reviewed properly before being pushed to the
+central repo by the dictator.
+
+
+
+
+
