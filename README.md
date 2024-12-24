@@ -1,2 +1,1 @@
-Name: Gokhan Unal.
-FSUID: GU23 / 200727160.
+This repo is created only for a Software Engineering class demo..
